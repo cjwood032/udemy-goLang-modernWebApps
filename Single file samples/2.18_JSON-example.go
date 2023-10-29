@@ -20,9 +20,9 @@ func main() {
 			"has_dog": true
 		},
 		{
-		"first_name": "Bruce",
-		"last_name": "Wayne",
-		"has_dog": false
+			"first_name": "Bruce",
+			"last_name": "Wayne",
+			"has_dog": false
 		}
 	]`
 	var unmarshalled []Person

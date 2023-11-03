@@ -1,10 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-          <title>Home</title>
-      </head>
-      <body>
-      <h1> this is the home page </h1>
-      </body>
-      </html>
+{{template "base" .}}
+{{define "content"}}
+    <div class = "container">
+        <div class = "row">
+            <div class ="col">
+                <h1> this is the home page </h1>
+                <p> and here is some text</p>
+            </div>
+        </div>
+    </div>
+{{end}}

@@ -3,6 +3,8 @@ package render
 import (
 	"bytes"
 	"github.com/cjwood032/go-course/pkg/config"
+
+	"github.com/cjwood032/go-course/pkg/models"
 	"html/template"
 	"log"
 	"net/http"
@@ -14,7 +16,12 @@ var app *config.ApplConfig
 func NewTemplates(a *config.ApplConfig) {
 	app = a
 }
-func RenderTemplate(w http.ResponseWriter, tmpl string) {
+func AddDefaultData(td *models.TemplateData) {
+
+	td.StringMap["test"] = "shouldn't this just work?"
+}
+
+func RenderTemplate(w http.ResponseWriter, tmpl string, td *models.TemplateData) {
 	var tc map[string]*template.Template
 	if app.UseCache {
 		tc = app.TemplateCache
@@ -26,8 +33,9 @@ func RenderTemplate(w http.ResponseWriter, tmpl string) {
 	if !ok {
 		log.Fatal(ok)
 	}
+	AddDefaultData(td)
 	buf := new(bytes.Buffer)
-	err := t.Execute(buf, nil)
+	err := t.Execute(buf, td)
 	if err != nil {
 		log.Println(err)
 	}

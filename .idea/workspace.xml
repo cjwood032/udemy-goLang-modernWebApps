@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ddbfdf8-657b-4c38-9749-9a1c3421446e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cmd/web/middleware.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/web/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/routes.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
@@ -65,7 +66,7 @@
       <recent name="$PROJECT_DIR$/cmd/web" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go routes.go">
+  <component name="RunManager" selected="Go Build.go build main.go routes.go middleware.go">
     <configuration name="go build 2.18_JSON-example.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="udemy_goLang_modern_web_apps" />
       <working_directory value="$PROJECT_DIR$" />
@@ -90,23 +91,23 @@
       <filePath value="$PROJECT_DIR$/Single file samples/3.21_Hello-web.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go routes.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go routes.go middleware.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="udemy_goLang_modern_web_apps" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/cmd/web/main.go|$PROJECT_DIR$/cmd/web/routes.go" />
+      <filePath value="$PROJECT_DIR$/cmd/web/main.go|$PROJECT_DIR$/cmd/web/routes.go|$PROJECT_DIR$/cmd/web/middleware.go" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go routes.go" />
+      <item itemvalue="Go Build.go build main.go routes.go middleware.go" />
       <item itemvalue="Go Build.go build 2.18_JSON-example.go" />
       <item itemvalue="Go Build.go build 2.18_JSON-example.go (1)" />
       <item itemvalue="Go Build.go build 3.21_Hello-web.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go routes.go" />
+        <item itemvalue="Go Build.go build main.go routes.go middleware.go" />
         <item itemvalue="Go Build.go build 3.21_Hello-web.go" />
         <item itemvalue="Go Build.go build 2.18_JSON-example.go (1)" />
         <item itemvalue="Go Build.go build 2.18_JSON-example.go" />

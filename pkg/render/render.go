@@ -16,9 +16,9 @@ var app *config.ApplConfig
 func NewTemplates(a *config.ApplConfig) {
 	app = a
 }
-func AddDefaultData(td *models.TemplateData) {
+func AddDefaultData(td *models.TemplateData) *models.TemplateData {
 
-	td.StringMap["test"] = "shouldn't this just work?"
+	return td
 }
 
 func RenderTemplate(w http.ResponseWriter, tmpl string, td *models.TemplateData) {
@@ -33,7 +33,7 @@ func RenderTemplate(w http.ResponseWriter, tmpl string, td *models.TemplateData)
 	if !ok {
 		log.Fatal(ok)
 	}
-	AddDefaultData(td)
+	td = AddDefaultData(td)
 	buf := new(bytes.Buffer)
 	err := t.Execute(buf, td)
 	if err != nil {
